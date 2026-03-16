@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import SearchBar from './SearchBar'
 
 const Navbar = () => {
   return (
@@ -13,11 +14,11 @@ const Navbar = () => {
                 height = {36} 
                 className = 'w-6 h-6 md:w-9 md:h-9'
             />
-            <p className='text-md font-medium tracking-wider'>TRENDLAMA.</p>
+            <p className='hidden md:block text-md font-medium tracking-wider'>TRENDLAMA.</p>
       </Link>
       
       <div className = ''>
-        right
+        <SearchBar />
       </div>
 
     </nav>
