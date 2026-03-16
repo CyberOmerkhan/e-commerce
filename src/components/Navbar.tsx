@@ -15,7 +15,7 @@ const Navbar = () => {
                 height = {36} 
                 className = 'w-6 h-6 md:w-9 md:h-9'
             />
-            <p className='hidden md:block text-md font-medium tracking-wider'>TRENDLAMA.</p>
+            <p className='hidden md:block text-base font-medium tracking-wider'>TRENDLAMA.</p>
       </Link>
       
       <div className = 'flex items-center gap-6'>

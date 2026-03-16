@@ -13,7 +13,7 @@ const Footer = () => {
                 width = {36} 
                 height = {36} 
             />
-            <p className='hidden md:block text-md font-medium tracking-wider text-white'>
+            <p className='hidden md:block text-base font-medium tracking-wider text-white'>
                 TRENDLAMA.
             </p>
       </Link>
