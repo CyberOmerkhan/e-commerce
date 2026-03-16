@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import SearchBar from './SearchBar'
+import Home, { Bell, HomeIcon, ShoppingCart } from 'lucide-react'
 
 const Navbar = () => {
   return (
@@ -17,8 +18,16 @@ const Navbar = () => {
             <p className='hidden md:block text-md font-medium tracking-wider'>TRENDLAMA.</p>
       </Link>
       
-      <div className = ''>
+      <div className = 'flex items-center gap-6'>
         <SearchBar />
+        <Link href ="/">
+          <HomeIcon className='w-4 h-4 text-gray-600'/>
+        </Link>
+        <Bell className='w-4 h-4 text-gray-600' />
+        <ShoppingCart className='w-4 h-4 text-gray-600' /> 
+        <Link href = '/login'>
+          Sign In
+        </Link>
       </div>
 
     </nav>
