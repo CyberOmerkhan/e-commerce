@@ -8,6 +8,12 @@ const Filter = () => {
     const searchParams = useSearchParams()
     const router = useRouter()
     const pathName = usePathname();
+
+    const handleFilter = (value:string) => {
+        const params = new URLSearchParams(searchParams)
+        params.set('sort', value)
+    }
+
   return (
     <div className='flex items-center justify-end gap-2 text-sm text-gray-500 my-6'>
         <span>Sort by:</span>
