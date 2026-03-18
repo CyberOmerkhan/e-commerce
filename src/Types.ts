@@ -8,8 +8,8 @@ export type ProductType = {
     shortDescription: string,
     description: string,
     price: number,
-    sizes: String[],
-    colors: String[],
+    sizes: string[],
+    colors: string[],
     images: Record<string, string>,
 }
 
