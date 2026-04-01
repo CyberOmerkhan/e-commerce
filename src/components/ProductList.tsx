@@ -1,3 +1,5 @@
+import React from 'react'
+import Link from 'next/link'
 import {ProductsList} from '@/Types'
 import Categories from './Categories'
 import ProductCard from './ProductCard'
@@ -114,9 +116,6 @@ const products: ProductsList = [
   },
 ];
 
-import React from 'react'
-import Link from 'next/link';
-
 const ProductList = ({category, params}:{category:string, params: "homepage" | "products"}) => {
   return (
     <div className='w-full'>
@@ -126,9 +125,9 @@ const ProductList = ({category, params}:{category:string, params: "homepage" | "
             {products.map(product => <ProductCard key = {product.id} product = {product}/>)}
       </div>
 
-      <Link href = {category ? `/products/?category=${category}` : `/products`}
+      {params === 'homepage' && <Link href = {category ? `/products/?category=${category}` : `/products`}
             className='flex justify-end mt-4 underline text-sm text-gray-500'>
-          View All Products</Link>
+          View All Products</Link>}
     </div>
   )
 }

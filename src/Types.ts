@@ -1,7 +1,3 @@
-interface DynamicObjectImages {
-    [key: string]: any,
-}
-
 export type ProductType = {
     id: string | number,
     name: string,
